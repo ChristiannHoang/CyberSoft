@@ -1,0 +1,126 @@
+/* GLOBAL CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+/* END GLOBAL CSS */
+
+/* HEADER CSS */
+.header__top-bar {
+    background-color: #000;
+    padding: 15px 0;
+}
+
+.top-bar__contact , .top-bar__socials {
+    display: inline-block;
+}
+
+.top-bar__socials {
+    float: right;
+}
+
+.top-bar__contact a, .top-bar__socials a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-bar__contact a:hover, .top-bar__socials a:hover {
+    color: #eb592d;
+}
+
+.top-bar__contact span {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.top-bar__socials a {
+    margin-left: 30px;
+}
+
+/* ------------------------------ */
+
+.header__main {
+    padding: 30px 0;
+}
+
+.header__logo, .header__navbar {
+    display: inline-block;
+}
+
+.header__navbar {
+    float: right;
+}
+
+.navbar__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar__item {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 40px;
+}
+/* END HEADER CSS */
+
+/* CAROUSEL */
+.carousel {
+    background-image: url(../img/banner.png);
+    height: 600px;
+    background-size: 100%;
+    background-position: center bottom;
+}
+
+.carousel__left, .carousel__right {
+    display: inline-block;
+}
+
+.caorousel__left {
+    color: #fff;
+    position: relative;
+    top: 50%;
+    transform: translateY(35%);
+    width: 30%;
+}
+
+.caorousel__left h1 {
+    font-size: 78px;
+    line-height: 85px;
+}
+
+.caorousel__left p {
+    line-height: 32px;
+    margin: 12px 0 50px 0;
+}
+
+.caorousel__left span {
+    font-weight: 400;
+}
+
+.carousel__right {
+    float: right;
+    width: 100%;
+}
+
+.carousel__button {
+    font-weight: 500;
+    padding: 17px 50px;
+    border: none;
+    background-color: #fff;
+    color: #ff3500;
+    font-size: 16px;
+    border-radius: 30px;
+}
+/* END CAROUSEL */
