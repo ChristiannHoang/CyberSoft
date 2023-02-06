@@ -34,7 +34,8 @@
     text-decoration: none;
 }
 
-.top-bar__contact a:hover, .top-bar__socials a:hover {
+.top-bar__contact a:hover, .top-bar__socials a:hover, 
+.navbar__item:hover {
     color: #eb592d;
 }
 
@@ -77,50 +78,22 @@
 
 /* CAROUSEL */
 .carousel {
-    background-image: url(../img/banner.png);
     height: 600px;
+    background-image: url(../img/banner.png);
     background-size: 100%;
     background-position: center bottom;
 }
 
-.carousel__left, .carousel__right {
-    display: inline-block;
-}
-
-.caorousel__left {
-    color: #fff;
-    position: relative;
-    top: 50%;
-    transform: translateY(35%);
+.carousel__left {
     width: 30%;
 }
 
-.caorousel__left h1 {
-    font-size: 78px;
-    line-height: 85px;
-}
-
-.caorousel__left p {
-    line-height: 32px;
-    margin: 12px 0 50px 0;
-}
-
-.caorousel__left span {
-    font-weight: 400;
-}
-
 .carousel__right {
-    float: right;
-    width: 100%;
+    width: 70%;
+    height: 100%;
 }
 
-.carousel__button {
-    font-weight: 500;
-    padding: 17px 50px;
-    border: none;
-    background-color: #fff;
-    color: #ff3500;
-    font-size: 16px;
-    border-radius: 30px;
+.carousel__img {
+    width: 100%;
 }
 /* END CAROUSEL */
