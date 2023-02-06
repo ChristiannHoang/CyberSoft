@@ -13,6 +13,22 @@
 .clear {
     clear: both;
 }
+
+.btn {
+    font-weight: 500;
+    padding: 17px 50px;
+    border: none;
+    background-color: #fff;
+    color: #ff3500;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    background-color: #ff3500;
+    color: white;
+}
+
 /* END GLOBAL CSS */
 
 /* HEADER CSS */
@@ -34,7 +50,7 @@
     text-decoration: none;
 }
 
-.top-bar__contact a:hover, .top-bar__socials a:hover {
+.top-bar__contact a:hover, .top-bar__socials a:hover, .navbar__item:hover {
     color: #eb592d;
 }
 
@@ -45,6 +61,7 @@
 
 .top-bar__socials a {
     margin-left: 30px;
+    font-size: 18px;
 }
 
 /* ------------------------------ */
@@ -84,43 +101,202 @@
 }
 
 .carousel__left, .carousel__right {
-    display: inline-block;
+    float: left;
 }
 
-.caorousel__left {
-    color: #fff;
-    position: relative;
-    top: 50%;
-    transform: translateY(35%);
+.carousel__left {
     width: 30%;
+    padding-top: 115px;
 }
 
-.caorousel__left h1 {
+.carousel__left h1 {
+    color: #fff;
     font-size: 78px;
     line-height: 85px;
 }
 
-.caorousel__left p {
+.carousel__left p {
+    color: #fff;
     line-height: 32px;
     margin: 12px 0 50px 0;
 }
 
-.caorousel__left span {
+.carousel__left span {
     font-weight: 400;
 }
 
+/* ---------------- */
+
 .carousel__right {
-    float: right;
-    width: 100%;
+    width: 70%;
 }
 
-.carousel__button {
-    font-weight: 500;
-    padding: 17px 50px;
-    border: none;
-    background-color: #fff;
-    color: #ff3500;
-    font-size: 16px;
-    border-radius: 30px;
+.carousel__img {
+    padding-top: 43px;
+    width: 100%;
 }
 /* END CAROUSEL */
+
+/* SERVICES CSS */
+.services {
+    margin-top: 241px;
+}
+
+.services__title {
+    text-align: center;
+}
+
+.services__title h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.services__title p {
+    color: #909092;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+/* --------------------------------- */
+
+.services__list {
+    list-style: none;
+    margin: 106px 0 30px;
+    text-align: center;
+}
+
+.service__bg {
+    width: calc(100%/3);
+    float: left;
+    padding: 0 10px;
+}
+
+.service__item {
+    border: 1px solid #eb592da3;
+    border-radius: 10px;
+    padding: 70px 25px;
+}
+
+.service__item img {
+    width: 160px;
+    height: 140px;
+    padding: 30px;
+    background-image: url(../img/service_icon_bg_1.png);
+}
+
+.service__item h3 {
+    font-size: 25px;
+    margin: 43px 0 22px;
+    font-weight: 600;
+}
+
+.service__desr {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #909092;
+}
+/* END SERVICES CSS */
+
+/* PET CARE CSS */
+.petCare__left, .petCare__right {
+    width: 50%;
+    float: left;
+}
+
+.petCare__left {
+    text-align: center;
+}
+
+.petCare__left img {
+    width: 456px;
+}
+
+.petCare__right {
+    margin-top: 90px;
+}
+
+.petCare__contact {
+    width: 464px;
+}
+
+.petCare__right h2, .help__left h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.petCare__right p, .help__left p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 54px;
+    color: #66666f;
+}
+
+.petCare .btn, .help__left .btn {
+    background-color: #ff3500;
+    color: #fff;
+}
+
+.petCare .btn:hover, .help__left .btn:hover {
+    background-color: #fff;
+    color: #ff3500;
+    border: 1px solid #f35000;
+}
+/* END PET CARE CSS */
+
+/* HELP CSS */
+.help__left, .help__right {
+    float: left;
+    width: 50%;
+}
+
+.help__left {
+    width: 50%;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.help__left p {
+    font-size: 16px;
+}
+
+.help__right .col {
+    width: 50%;
+    float: left;
+    padding: 15px;
+}
+
+.help__right .col-1 {
+    padding-top: 160px;
+} 
+
+.help__right .item {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgb(0, 0, 2, 0.08);
+    border-radius: 15px;
+}
+
+.help__right .col-2 > .item {
+    margin-bottom: 40px;
+}
+
+.help__right .quantity {
+    font-size: 60px;
+    font-weight: 700;
+    color: #383737;
+    margin-bottom: 2px;
+    margin-top: 22px;
+    line-height: 1;
+}
+
+.help__right .item p {
+    font-size: 20px;
+    color: gray;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0;
+}
+/* END HELP CSS */
