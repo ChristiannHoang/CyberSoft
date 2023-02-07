@@ -107,3 +107,30 @@
     width: 100%;
 }
 /* END CAROUSEL */
+
+/* INFOR CSS */
+.infor {
+    margin-top: 30px;
+    background-color: #f6f6f6;
+}
+
+.infor__list {
+    padding: 40px 0;
+    list-style: none;
+}
+
+.infor__item {
+    width: 25%;
+    float: left;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0 35px;
+}
+
+.infor__item h3 {
+    float: right;
+    position: relative;
+    top: 13px;
+    font-weight: 500;
+}
+/* END INFOR CSS */
