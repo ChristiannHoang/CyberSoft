@@ -5,6 +5,105 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn {
+    background-color: #fdc800;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 4px;
+    margin-top: 30px;
 }
 /* END GLOBAL CSS */
+
+/* HEADER CSS */
+.header {
+    padding: 10px 0 15px;
+}
+
+.header__logo span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #002146;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+
+.header__logo i {
+    line-height: 30px;
+    color: #fdc800;
+    font-size: 13px;
+}
+
+.header__logo h1 {
+    display: inline-block;
+    font-size: 28px;
+    margin-left: 3px;
+}
+
+.navbar__list {
+    list-style: none;
+}
+
+.navbar__item {
+    float: left;
+    margin: 5px 15px 0;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+}
+/* END HEADER CSS */
+
+/* CAROUSEL */
+.carousel .banner img {
+    width: 100%;
+}
+
+.carousel__infor {
+    margin-top: 50px;
+}
+
+.carousel .col {
+    width: 50%;
+    float: left;
+}
+
+.infor__left {
+    padding-right: 60px;
+}
+
+.infor__left h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.infor__left p {
+    font-size: 15px;
+    color: #646464;
+}
+
+.infor__right img {
+    width: 100%;
+}
+/* END CAROUSEL */
