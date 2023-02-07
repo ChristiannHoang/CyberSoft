@@ -28,6 +28,11 @@
     border-radius: 4px;
     margin-top: 30px;
 }
+
+.btn:hover {
+    background-color: #002146;
+    color: #fdc800;
+}
 /* END GLOBAL CSS */
 
 /* HEADER CSS */
@@ -117,6 +122,8 @@
 .infor__list {
     padding: 40px 0;
     list-style: none;
+    margin-left: -35px;
+    margin-right: -95px;
 }
 
 .infor__item {
@@ -130,7 +137,39 @@
 .infor__item h3 {
     float: right;
     position: relative;
+    left: -50px;
     top: 13px;
     font-weight: 500;
 }
 /* END INFOR CSS */
+
+/* CATEGORY CSS*/
+.category {
+    padding: 120px 0;
+}
+
+.category__list {
+    list-style: none;
+    margin: 30px -15px;
+}
+
+.category__item {
+    float: left;
+    width: calc(100% / 4);
+    padding: 0 15px;
+}
+
+.category__item .item__wrapper {
+    background-color: #002146;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.category__icon i{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+/* END CATEGORY CSS */
