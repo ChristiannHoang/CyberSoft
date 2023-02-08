@@ -145,7 +145,7 @@
 
 /* CATEGORY CSS*/
 .category {
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .category__list {
@@ -173,3 +173,19 @@
     margin-bottom: 16px;
 }
 /* END CATEGORY CSS */
+
+/* BLOG CSS */
+.blog {
+    padding: 80px 0;
+    background-color: #f6f6f6;
+}
+
+.blog .col {
+    float: left;
+    width: 50%;
+}
+
+.blog .post {
+    
+}
+/* END BLOG CSS */
