@@ -25,9 +25,9 @@ html {
 .btn {
     background-color: #fdc800;
     border: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 4px;
     margin-top: 30px;
 }
@@ -45,8 +45,8 @@ html {
 
 .header__logo span {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #002146;
     text-align: center;
@@ -55,9 +55,9 @@ html {
 }
 
 .header__logo i {
-    line-height: 30px;
+    line-height: 35px;
     color: #fdc800;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .header__logo h1 {
@@ -107,7 +107,7 @@ html {
 }
 
 .infor__left p {
-    font-size: 15px;
+    font-size: 16px;
     color: #646464;
 }
 
@@ -231,6 +231,7 @@ html {
 
 .post__content h4 {
     font-weight: 700;
+    font-size: 20px;
 }
 
 .post__day {
@@ -240,7 +241,7 @@ html {
 }
 
 .post__text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.3;
     color: #434343;
 }
@@ -301,19 +302,19 @@ html {
 }
 
 .events__content h4 {
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
 .events__content p {
-    font-size: 14px;
     color: #434343;
     margin-bottom: 8px;
 }
 
 .events__content div {
-    color: #002146;
-    font-size: 14px;
+    color: #00152e;
+    font-weight: 500;
 }
 
 .event__time {
@@ -331,8 +332,57 @@ html {
 }
 
 .event__time, .event__location {
-    margin: 0 12px;
+    margin-right: 24px;
+}
+/* END BLOG CSS */
+
+/* FOOTER CSS */
+.footer {
+    padding: 64px 0;
+    background-color: #002146;
 }
 
+.footer__top {
+    margin-right: -12px;
+    margin-left: -12px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #363d45;
+}
 
-/* END BLOG CSS */
+.footer__col {
+    width: calc(100%/3);
+    float: left;
+    color: #fff;
+    padding: 0 12px;
+}
+
+.footer__col h4 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer__col ul {
+    list-style: none;
+    margin-top: 16px;
+    line-height: 1.6;
+}
+
+.footer__col li {
+    margin: 8px 0;
+}
+
+.footer__col li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__col li i {
+    color: #fdc800;
+    margin-right: 8px;
+}
+
+.footer__bottom {
+    padding-top: 32px;
+    color: #fff;
+}
+/* END FOOTER CSS */
