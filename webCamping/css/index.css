@@ -181,3 +181,103 @@ html {
     color: #f02424;
 }
 /* END DESTINATIONS CSS */
+
+/* CONTACT CSS */
+.contact {
+    background-color: var(--primary-color);
+    background-image: url('../img/mask.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -385px center;
+    height: 40rem;
+}
+
+.contact .col {
+    width: 50%;
+    float: left;
+}
+
+.contact__left img {
+    margin-left: 13rem;
+    margin-top: 3.2rem;
+}
+
+.contact__right {
+    padding: 6.4rem;
+    color: #8d8d8d;
+}
+
+.contact__right .title {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.contact__right .right__text {
+    font-size: 1.8rem;
+}
+
+.right__contact {
+    margin-top: 1.2rem;
+}
+
+.right__contact h4 {
+    font-size: 1.8rem;
+    padding: 1.6rem 0;
+    font-weight: 700;
+}
+
+.app__mobile {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.social i {
+    font-size: 2.4rem;
+    margin-right: 1.6rem;
+    color: #e76f51;
+    cursor: pointer;
+}
+/* END CONTACT CSS */
+
+/* FOOTER CSS*/
+.footer {
+    padding-top: 6.4rem;
+    background-color: var(--primary-secondary-color);
+    font-size: 1.6rem;
+}   
+
+.footer .wrapper {
+    background-color: var(--primary-color);
+    border-radius: 7.5rem;
+    padding: 6.4rem 3.2rem;
+}
+
+.footer__top .col {
+    width: calc(60%/3);
+    float: left;;
+}
+
+.footer__top .col h4 {
+    margin-bottom: 1.8rem;
+    font-weight: 700;
+}
+
+.footer__top .col ul {
+    list-style: none;
+}
+
+.footer__top .col li {
+    cursor: pointer;
+    margin: 0.8rem 0;
+}
+
+.footer .footer__text {
+    width: 40%;
+    padding: 0 3.2rem;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 3.2rem;
+}
+/* END FOOTER CSS */
