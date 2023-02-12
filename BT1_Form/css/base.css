@@ -1,0 +1,21 @@
+:root {
+    --primary-color: rgb(0, 143, 156);
+    --font-text-color: rgb(47,47,47);
+    --field-color: rgb(245,247,248);
+    --text-color: #fff;
+    --secondary-color: rgb(114,187,76);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+    font-size: 62.5%;
+    line-height: 1.6;
+    font-weight: 400;
+}
