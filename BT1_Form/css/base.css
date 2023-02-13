@@ -9,13 +9,70 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
-}
-
-html {
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
     font-size: 62.5%;
-    line-height: 1.6;
-    font-weight: 400;
 }
+
+.text-end {
+    text-align: right;
+}
+
+.mt-16 {
+    margin-top: 1.6rem;
+}
+
+.mb-28 {
+    margin-bottom: 2.8rem;
+}
+
+.mr-8 {
+    margin-right: 0.8rem;
+}
+
+.mt-32 {
+    margin-top: 3.2rem;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__col-25 {
+    width: 25%;
+}
+
+.grid__col-30 {
+    width: 30%;
+}
+
+.grid__col-50 {
+    width: 50%;
+}
+
+.grid__col-70 {
+    width: 70%;
+}
+
+.grid__col-75 {
+    width: 75%;
+}
+
+.grid__col-third {
+    width: calc(100%/3);
+}
+
+
+
+

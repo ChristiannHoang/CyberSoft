@@ -1,46 +1,59 @@
 .form__infor {
-    width: 50%;
-    margin: 0 auto;
+    width: 750px;
+    margin: 1.6rem auto;
+    border: 1px solid #000;
+    border-radius: 3px;
     padding: 1.6rem 3.2rem;
 }
 
-.form__title {
+.form__heading {
     font-size: 4.8rem;
     text-align: center;
     font-weight: 600;
 }
 
 .form__input-field {
-    display: flex;
     align-items: center;
-    margin-bottom: 2.8rem;
 }
 
 .form__label {
-    width: 20%;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--font-text-color);
     text-align: right;
-    margin-right: 1.6rem;
+    margin-right: 2.3rem;
 }
 
 .form__control {
-    flex: 1;
-    height: 68px;
-    border: 2px solid transparent;
-    background-color: var(--field-color);
+    padding: 0 2rem;
     font-size: 1.5rem;
-    padding: 1.5rem;
-    color: rgb(137, 137, 137);
+    height: 6.8rem;
+    border: 2px solid transparent;
     border-radius: 2px;
+    background-color: var(--field-color);
+    color: rgb(137, 137, 137);
+    transition: .3s all linear;
 }
 
 .form__control:focus {
-    outline: none;
     border: 2px solid var(--primary-color);
-    background-color: var(--text-color);
-    transition: .3s all linear;
+    outline: none;
+}
+
+.form__control[type=radio] {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.form__input-level {
+    height: 6.8rem;
+    border-top: 2px solid var(--field-color);
+    border-bottom: 2px solid var(--field-color);
+}
+
+.form__input-check {   
+    display: flex;
+    align-items: center;
 }
 
 
