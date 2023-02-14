@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #1a8053;
+    --secondary-color: #18734b;
+    --text-white: #fff;
+
+    --header-height: 13rem;
+    --header-topbar-height: 4rem;
+    --header-main-height: calc(var(--header-height) - var(--header-topbar-height));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+.container {
+    width: 114rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+

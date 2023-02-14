@@ -1,0 +1,123 @@
+/* HEADER CSS */
+.header {
+    height: var(--header-heigt);
+}
+
+.header__topbar {
+    background-color: var(--secondary-color);
+    height: var(--header-topbar-height);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 4rem;
+    color: var(--text-white);
+}
+
+.header__main {
+    background-color: var(--primary-color);
+    height: var(--header-main-height);
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    width: 32rem;
+}
+
+.header__logo img {
+    width: 19.5rem;
+}
+
+.header__search {
+    width: 59rem;
+    height: 3.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0 0.8rem;
+
+}
+
+.header__search input:focus {
+    outline: none;
+}
+
+.header__search-icon {
+    width: 5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #777;
+}
+
+.header__cart {
+    text-align: right;
+    width: 23.5rem;
+    color: var(--text-white);
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.header__cart i {
+    font-size: 2rem;
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: 0.2rem 0.2rem 0.4rem #d5d5d5;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+}
+
+.navbar__title {
+    width: 30.5rem;
+    height: 100%;
+    background-color: #f8d90c;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+.navbar__title i {
+    padding: 0 1.6rem;
+}
+
+.navbar__list {
+    flex: 1;
+    list-style: none;
+    display: flex;
+}
+
+.navbar__item {
+    padding: 0 1.5rem;
+}
+
+.navbar__item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.navbar__button {
+    width: 26.5rem;
+}
