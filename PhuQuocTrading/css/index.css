@@ -95,6 +95,7 @@
     font-size: 1.6rem;
     font-weight: 900;
     line-height: 4.5rem;
+    cursor: pointer;
 }
 
 .navbar__title i {
@@ -118,6 +119,79 @@
     font-weight: 500;
 }
 
+.navbar__item a:hover {
+    color: #008848;
+}
+
 .navbar__button {
     width: 26.5rem;
+    text-align: right;
 }
+
+.navbar__button button {
+    background-color: #b20000;
+    border: none;
+    padding: 1rem 1.6rem;
+    color: var(--text-white);
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+}
+
+.navbar__button button:hover {
+    cursor: pointer;
+    background-color: #960000;
+}
+
+/* BANNER CSS */
+.banner .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.banner__sidebar {
+    width: 30.5rem;
+    height: 32.5rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.sidebar__nav-list {
+    list-style: none;
+}
+
+.sidebar__item {
+    padding-left: 0.8rem;
+    height: 4rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__item:last-child {
+    border-bottom: none;
+}
+
+.sidebar__item a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #444;
+    line-height: 4rem;
+}
+
+.sidebar__item img {
+    margin: 0 0.4rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translateY(25%);
+}
+
+.banner__slider {
+    flex: 1;
+    height: 32.5rem;
+    background-image: url('../img/banner-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
