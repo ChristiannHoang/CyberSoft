@@ -1,6 +1,11 @@
 /* HEADER CSS */
 .header {
-    height: var(--header-heigt);
+    height: 13rem;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .header__topbar {
@@ -28,6 +33,7 @@
 }
 
 .header__logo img {
+    cursor: pointer;
     width: 19.5rem;
 }
 
@@ -36,15 +42,17 @@
     height: 3.5rem;
     border-radius: 5px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 .header__search {
+    flex: 1;
     display: flex;
     align-items: center;
 }
 
 .header__search input {
-    flex: 1;
+    width: 100%;
     height: 100%;
     border: none;
     border-top-left-radius: 5px;
@@ -72,6 +80,74 @@
     line-height: 2.2rem;
 }
 
+.header__cart-wapper {
+    cursor: pointer;
+    position: relative;
+}
+
+.header__cart-wapper:hover .header__cart--no-cart {
+    display: flex;
+}
+
+.header__cart--no-cart {
+    position: absolute;
+    top: calc(100% + 2rem);
+    right: 0;
+    background-color: #fff;
+    width: 29rem;
+    height: 7rem;
+    border: 1px solid #ccc;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    animation: Scale .15s linear;
+    transform-origin: calc(100% - 3rem) 0;
+}
+
+@keyframes Scale {
+    from {
+        opacity: 0;
+        transform: scale(0.2);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.header__cart--no-cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: 3rem;
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background-color: #fff;
+    z-index: -1;
+}
+
+.header__cart--no-cart::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    height: 2rem;
+    width: 9rem;
+}
+
+.header__cart--no-cart span {
+    color: #7a7a7a;
+}
+
+.header__cart a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .header__cart i {
     font-size: 2rem;
 }
@@ -79,12 +155,13 @@
 /* NAVBAR */
 .navbar {
     box-shadow: 0.2rem 0.2rem 0.4rem #d5d5d5;
+    background-color: #fff;
 }
 
 .navbar .container {
     display: flex;
     align-items: center;
-    height: 4.5rem;
+    height: var(--header-navbar-height);
 }
 
 .navbar__title {
@@ -147,11 +224,11 @@
 .banner .container {
     display: flex;
     align-items: flex-start;
+    margin-top: var(--header-height);
 }
 
 .banner__sidebar {
     width: 30.5rem;
-    height: 32.5rem;
     background-color: #fff;
     border: 1px solid #ccc;
 }
@@ -162,10 +239,14 @@
 
 .sidebar__item {
     padding-left: 0.8rem;
-    height: 4rem;
+    height: 4.5rem;
     border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
+}
+
+.sidebar__item:hover a {
+    color: #008848;
 }
 
 .sidebar__item:last-child {
@@ -187,11 +268,94 @@
 }
 
 .banner__slider {
+    position: relative;
     flex: 1;
-    height: 32.5rem;
+    height: 36.178rem;
     background-image: url('../img/banner-3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
+}
+
+.slider__btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 4rem;
+    color: #fff;
+    transition: all .2s linear;
+}
+
+@keyframes btnFadeInLeft {
+    from {
+        opacity: 0;
+        left: 3rem;
+    }
+    to {
+        opacity: 1;
+        left: 1.5rem;
+    }
+}
+
+@keyframes btnFadeInRight {
+    from {
+        opacity: 0;
+        right: 3rem;
+    }
+    to {
+        opacity: 1;
+        right: 1.5rem;
+    }
+}
+
+
+.banner__slider:hover .slider__btn {
+    display: block;
+}
+
+.slider__btn:hover {
+    background-color: #008848;
+    border-color: #008848;
+}
+
+.slider__button-left {
+    animation: btnFadeInLeft .25s linear;
+    left: 1.5rem;
+}
+
+.slider__button-right {
+    right: 1.5rem;
+    animation: btnFadeInRight .25s linear;
+}
+
+.slider__control {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+}
+
+.slider__control span {
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 3px solid #abb8c3;
+    margin-right: 2rem;
+    border-radius: 50%;
+    transition: all .2s linear;
+}
+
+.slider__control span:hover {
+    border-color: #fff;
+}
+
+.slider__control span:last-child {
+    background-color: #fff;
 }
 

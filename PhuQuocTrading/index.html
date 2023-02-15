@@ -16,47 +16,55 @@
 <body>
     <!-- HEADER -->
     <div class="header">
-            <div class="header__topbar">Miễn phí vận chuyển cho đơn hàng > 1.000.000 đ</div>
-            <div class="header__main">
-                <div class="container">
-                    <div class="header__logo">
-                        <img src="./img/\/logo.png" alt="logo">
-                    </div>
-                    <div class="header__search">
-                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
-                        <span class="header__search-icon">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="header__topbar">Miễn phí vận chuyển cho đơn hàng > 1.000.000 đ</div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__logo">
+                    <img src="./img/\/logo.png" alt="logo" title="Phú Quốc">
+                </div>
+                <div class="header__search">
+                    <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <span class="header__search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+                <div class="header__cart">
+                    <a href="" title="Giỏ hàng">
+                        <span class="header__cart-wapper">
+                            Giỏ hàng
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <!-- CART NO CART -->
+                            <div class="header__cart--no-cart">
+                                <span>Chưa có sản phẩm trong giỏ hàng</span>
+                            </div>
                         </span>
-                    </div>
-                    <div class="header__cart">
-                        Giỏ hàng
-                        <i class="fa-solid fa-basket-shopping"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
-    </div>
-    <!-- END HEADER -->
-
-    <!-- NAVBAR -->
-    <div class="navbar">
-        <div class="container">
-            <div class="navbar__title">
-                <i class="fa-solid fa-bars"></i>
-                DANH MỤC SẢN PHẨM
-            </div>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#">Trang chủ</a></li>
-                <li class="navbar__item"><a href="#">Khuyến mãi</a></li>
-                <li class="navbar__item"><a href="#">Thực đơn hôm nay</a></li>
-                <li class="navbar__item"><a href="#">Kiến Thức</a></li>
-                <li class="navbar__item"><a href="#">Liên hệ</a></li>
-            </ul>
-            <div class="navbar__button">
-                <button>Đặt hàng: 0901 816 538</button>
+        </div>
+        
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar__title">
+                    <i class="fa-solid fa-bars"></i>
+                    DANH MỤC SẢN PHẨM
+                </div>
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="#">Trang chủ</a></li>
+                    <li class="navbar__item"><a href="#">Khuyến mãi</a></li>
+                    <li class="navbar__item"><a href="#">Thực đơn hôm nay</a></li>
+                    <li class="navbar__item"><a href="#">Kiến Thức</a></li>
+                    <li class="navbar__item"><a href="#">Liên hệ</a></li>
+                </ul>
+                <div class="navbar__button">
+                    <button>Đặt hàng: 0901 816 538</button>
+                </div>
             </div>
         </div>
+        <!-- END NAVBAR -->
     </div>
-    <!-- END NAVBAR -->
+    <!-- END HEADER -->
 
     <!-- BANNER -->
     <div class="banner">
@@ -113,7 +121,15 @@
                     </li>
                 </ul>
             </div>
-            <div class="banner__slider"></div>
+            <div class="banner__slider">
+                <div class="slider__btn slider__button-left"><i class="fa-solid fa-chevron-left"></i></div>
+                <div class="slider__btn slider__button-right"><i class="fa-solid fa-chevron-right"></i></div>
+                <div class="slider__control">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END BANNER -->

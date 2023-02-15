@@ -3,9 +3,10 @@
     --secondary-color: #18734b;
     --text-white: #fff;
 
-    --header-height: 13rem;
+    --header-height: 17.5rem;
     --header-topbar-height: 4rem;
-    --header-main-height: calc(var(--header-height) - var(--header-topbar-height));
+    --header-navbar-height: 4.5rem;
+    --header-main-height: calc(var(--header-height) - var(--header-topbar-height) - var(--header-navbar-height));
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 }
 
 .container {
-    width: 114rem;
+    width: 128rem;
     max-width: 100%;
     margin: 0 auto;
 }
