@@ -1,5 +1,6 @@
 /* HEADER CSS */
 .header {
+    display: none;
     height: 13rem;
     position: fixed;
     z-index: 10000;
@@ -105,16 +106,6 @@
     transform-origin: calc(100% - 3rem) 0;
 }
 
-@keyframes Scale {
-    from {
-        opacity: 0;
-        transform: scale(0.2);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
 
 .header__cart--no-cart::before {
     content: "";
@@ -277,52 +268,15 @@
     background-position: top left;
 }
 
-.slider__btn {
-    display: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 4rem;
-    height: 4rem;
-    border: 2px solid #fff;
-    font-size: 2.5rem;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 4rem;
-    color: #fff;
-    transition: all .2s linear;
-}
-
-@keyframes btnFadeInLeft {
-    from {
-        opacity: 0;
-        left: 3rem;
-    }
-    to {
-        opacity: 1;
-        left: 1.5rem;
-    }
-}
-
-@keyframes btnFadeInRight {
-    from {
-        opacity: 0;
-        right: 3rem;
-    }
-    to {
-        opacity: 1;
-        right: 1.5rem;
-    }
-}
-
-
-.banner__slider:hover .slider__btn {
+.banner__slider:hover .slider__btn{
     display: block;
 }
 
-.slider__btn:hover {
-    background-color: #008848;
-    border-color: #008848;
+.slider__button-left,
+.slider__button-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slider__button-left {
@@ -357,5 +311,164 @@
 
 .slider__control span:last-child {
     background-color: #fff;
+}
+
+/* PRODUCT CSS */
+.product {
+    margin-top: 1.6rem;
+    margin-bottom: 3.2rem;
+}
+
+.product .container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.6rem;
+}
+
+.product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__header-text {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.product__header-more {
+    font-size: 1.3rem;
+    color: #444;
+}
+
+.product__header-more i {
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.product__banner {
+    height: 15.5rem;
+    background: url('../img/product-banner.jpg') no-repeat center center/cover;
+    margin-top: 2.4rem;
+}
+
+.product__banner:hover {
+    /* animation: Scale 1s ease-in-out; */
+    transform: scale(1.2, 1.2);
+    transition: all .3s linear;
+}
+
+.product__list {
+    position: relative;
+    list-style: none;
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+}
+
+.product__list:hover .slider__btn {
+    display: block;
+}
+
+.product__item {
+    width: 20%;
+    padding: 0.8rem;
+}
+
+.product__item-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2.4rem 0.4rem 1.6rem;
+    text-align: center;
+}
+
+.product__item-wrapper:hover {
+    border-color: var(--primary-color);
+}
+
+.product__img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.product-title {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    margin-top: 2.4rem;
+    font-weight: 500;
+}
+
+.product__price {
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+    color: red;
+    font-weight: 500;
+}
+
+.product__price-combo {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.product__quantity {
+    margin-top: 0.8rem;
+}
+
+.product__quantity-wapper {
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product__quantity-wapper i {
+    display: inline-block;
+    width: 2rem;
+    padding: 0 0.4rem;
+    font-size: 0.8rem;
+    line-height: 3.4rem;
+}
+
+.product__quantity-wapper i:hover {
+    background-color: #f1f1f1;
+    display: block;
+}
+
+.product__quantity-number {
+    width: 3rem;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+}
+
+.product__add-to-cart {
+    margin-top: 0.8rem;
+}
+
+.product__btn-left,
+.product__btn-right {
+    display: none;
+    position: absolute;
+    top: 25%;
+    color: #000;
+    border-color: #000;
+}
+
+.product__btn-left {
+    left: 1.5rem;
+    animation: btnFadeInLeft .25s linear;
+}
+
+.product__btn-right {
+    right: 1.5rem;
+    animation: btnFadeInRight .25s linear;
 }
 
