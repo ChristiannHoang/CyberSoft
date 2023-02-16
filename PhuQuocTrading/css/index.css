@@ -1,6 +1,62 @@
+/* TOOLBAR CSS */
+.toolbar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.toolbar__content {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.toolbar__icon {
+    --scale-from: 0.8;
+    --scale-to: 1;
+    --opacity-from: 1;
+    --opacity-to: 1;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-bottom: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;    
+    animation: Scale 1s linear infinite;
+}
+
+.toolbar__content a {
+    text-decoration: none;
+}
+
+.toolbar__title {
+    background-color: #dd3333;
+}
+
+.toolbar__icon.call-icon {
+    background-color: #dd3333;
+}
+
+.toolbar__icon.mess-icon {
+    background-color: #0772e6;
+}
+
+.toolbar__icon.zalo-icon {
+    background-color: #1e73be;
+}
+
+.toolbar__img {
+    width: 100%;
+    height: 100%;
+}
 /* HEADER CSS */
 .header {
-    display: none;
+    /* display: none; */
     height: 13rem;
     position: fixed;
     z-index: 10000;
@@ -91,6 +147,7 @@
 }
 
 .header__cart--no-cart {
+    display: block;
     position: absolute;
     top: calc(100% + 2rem);
     right: 0;
@@ -98,7 +155,6 @@
     width: 29rem;
     height: 7rem;
     border: 1px solid #ccc;
-    display: none;
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -107,16 +163,9 @@
 }
 
 
-.header__cart--no-cart::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -2px;
-    right: 3rem;
-    width: 4rem;
-    height: 4rem;
-    transform: rotate(45deg);
-    background-color: #fff;
+.header__cart--no-cart::before,
+.arrow-css::before {
+    --left: 80%;
     z-index: -1;
 }
 
@@ -340,6 +389,7 @@
 }
 
 .product__header-more {
+    cursor: pointer;
     font-size: 1.3rem;
     color: #444;
 }
@@ -472,3 +522,139 @@
     animation: btnFadeInRight .25s linear;
 }
 
+/* BLOG CSS*/
+.blog {
+    margin-bottom: 9rem;
+}
+
+.blog__list {
+    position: relative;
+    margin: 3.2rem -1.6rem 1.6rem;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.blog__list:hover .slider__btn {
+    display: block;
+}
+
+.blog__item {
+    padding: 0 1.6rem;
+    cursor: pointer;;
+}
+
+.blog__item:hover .blog__item-img {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.blog__item-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog__title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-top: 1.6rem;
+    font-weight: 800;
+}
+
+.blog__text {
+    font-size: 1.4rem;
+    color: #444;
+    margin-top: 0.8rem;
+}
+
+.blog__btn-left,
+.blog__btn-right {
+    position: absolute;
+    top: 25%;
+    color: #000;
+    border-color: #000;
+}
+
+.blog__btn-left {
+    animation: btnFadeInLeft .25s linear;
+    left: 1.5rem;
+}
+
+.blog__btn-right {
+    right: 1.5rem;
+    animation: btnFadeInRight .25s linear;
+}
+
+/* FOOTER CSS */
+.footer {
+    background-color: var(--primary-color);
+    padding: 3.2rem 0 2.4rem;
+}
+
+.footer__top {
+    display: flex;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+}
+
+.footer__col {
+    padding: 0 1.6rem;
+}
+
+.footer__location {
+    flex: 1;
+}
+
+.footer__support {
+    width: 30%;
+}
+
+.footer__fanpage {
+    width: 30%;
+}
+
+.footer__title {
+    color: #f1f1f1;
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+.footer__title-divider {
+    width: 4rem;
+    height: 0.4rem;
+    background-color: #f1f1f1;
+}
+
+.footer__list {
+    margin-top: 3.2rem;
+    list-style: none;
+}
+
+.footer__item {
+    margin-top: 1.6rem;
+}
+
+.footer__item a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 1.6rem;
+}
+
+.footer__item span {
+    font-weight:600;
+}
+
+.footer__bottom {
+    margin-top: 1.6rem;
+    padding-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: #ccc;
+}
+
+.footer__bottom span{
+    font-weight: 600;
+}

@@ -14,6 +14,29 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+    <!-- TOOL BAR -->
+    <div class="toolbar">
+        <div class="toolbar__content">
+            <a href="">
+                <div class="toolbar__icon call-icon" title="Hotline">
+                    <img src="./img/icon-t1-white-1.png" alt="" class="toolbar__img">
+                    <div class="toolbar__title">Hotline</div>
+                </div>
+            </a>
+            <a href="">
+                <div class="toolbar__icon zalo-icon" title="Zalo">
+                    <img src="./img/zalo.png" alt="" class="toolbar__img">
+                </div>
+            </a>
+            <a href="">
+                <div class="toolbar__icon mess-icon" title="Messenger">
+                    <img src="./img/icon-t2-white.png" alt="" class="toolbar__img">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- END TOOL BAR -->
+
     <!-- HEADER -->
     <div class="header">
         <div class="header__topbar">Miễn phí vận chuyển cho đơn hàng > 1.000.000 đ</div>
@@ -34,7 +57,7 @@
                             Giỏ hàng
                             <i class="fa-solid fa-basket-shopping"></i>
                             <!-- CART NO CART -->
-                            <div class="header__cart--no-cart">
+                            <div class="header__cart--no-cart arrow-css">
                                 <span>Chưa có sản phẩm trong giỏ hàng</span>
                             </div>
                         </span>
@@ -474,11 +497,76 @@
     <!-- END LIST PRODUCT -->
 
     <!-- BLOG -->
-    <div class="blog"></div>
+    <div class="blog product">
+        <div class="container">
+            <div class="product__header">
+                <div class="product__header-text">Kiến Thức</div>
+                <div class="product__header-more">
+                    Xem thêm
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+            <ul class="blog__list">
+                <div class="slider__btn blog__btn-left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="slider__btn blog__btn-right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <li class="blog__item">
+                    <img src="./img/blog-img-1.jpg" alt="" class="blog__item-img">
+                    <h4 class="blog__title">Cách nhận biết súp lơ Đà Lạt và súp lơ Trung Quốc</h4>
+                    <p class="blog__text">Xu hướng ăn sạch, sống khỏe đang ngày càng được nhiều người lựa chọn để [...]					</p>
+                </li>
+                <li class="blog__item">
+                    <img src="./img/blog-img-1.jpg" alt="" class="blog__item-img">
+                    <h4 class="blog__title">Cách nhận biết súp lơ Đà Lạt và súp lơ Trung Quốc</h4>
+                    <p class="blog__text">Xu hướng ăn sạch, sống khỏe đang ngày càng được nhiều người lựa chọn để [...]					</p>
+                </li>
+                <li class="blog__item">
+                    <img src="./img/blog-img-1.jpg" alt="" class="blog__item-img">
+                    <h4 class="blog__title">Cách nhận biết súp lơ Đà Lạt và súp lơ Trung Quốc</h4>
+                    <p class="blog__text">Xu hướng ăn sạch, sống khỏe đang ngày càng được nhiều người lựa chọn để [...]					</p>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- END BLOG -->
 
     <!-- FOOTER -->
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__col footer__location">
+                    <h4 class="footer__title">CÔNG TY TNHH TMDVDL PHÚ QUỐC</h4>
+                    <div class="footer__title-divider"></div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" style="cursor: text"><span>Địa chỉ: </span>388 Nguyễn Chí Thanh, Phường 05, Quận 10, Tp.HCM</a></li>
+                        <li class="footer__item"><a href=""><span>Điện thoại: </span>0901.816.538 - 0901.866.908</a></li>
+                        <li class="footer__item"><a href=""><span>ĐKKD số: </span>0314760442</a></li>
+                        <li class="footer__item"><a href="">Do Sở KH&ĐT Tp. HCM Cấp ngày 28/11/2017</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__support">
+                    <h4 class="footer__title">HỖ TRỢ KHÁCH HÀNG</h4>
+                    <div class="footer__title-divider"></div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="">Chính sách đổi trả</a></li>
+                        <li class="footer__item"><a href="">Phương thức thanh toán</a></li>
+                        <li class="footer__item"><a href="">Chính sách giao hàng</a></li>
+                        <li class="footer__item"><a href="">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col footer__fanpage">
+                    <h4 class="footer__title">FANPAGE</h4>
+                    <div class="footer__title-divider"></div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>Copyright 2023 © Phu Quoc Trading. <span>Thiết kế bởi wecode.vn</span></p> 
+            </div>
+        </div>
+    </div>
     <!-- END FOOTER -->
 </body>
 </html>

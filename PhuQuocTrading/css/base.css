@@ -56,6 +56,7 @@ html {
     line-height: 4rem;
     color: #fff;
     transition: all .2s linear;
+    z-index: 999;
 }
 
 .slider__btn:hover {
@@ -91,16 +92,50 @@ html {
 :root {
     --scale-from: 0.2;
     --scale-to: 1;
+    --opacity-from: 0;
+    --opacity-to: 1;
 }
 
 @keyframes Scale {
     from {
-        opacity: 0;
+        opacity: var(--opacity-from);
         transform: scale(var(--scale-from));
     }
     to {
-        opacity: 1;
+        opacity: var(--opacity-to);
         transform: scale(var(--scale-to));
     }
 }
 
+@keyframes Scale {
+    from {
+
+        opacity: var(--opacity-from);
+        transform: scale(var(--scale-from));
+    }
+    to {
+        opacity: var(--opacity-to);
+        transform: scale(var(--scale-to));
+    }
+}
+
+/* ARROW CSS */
+:root {
+    --top: 0;
+    --left: 0;
+    --width: 4rem;
+    --height: 4rem;
+    --bg-color: #fff;
+}
+
+.arrow-css::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    width: var(--width);
+    height: var(--height);
+    transform: rotate(45deg);
+    background-color: var(--bg-color);
+}
