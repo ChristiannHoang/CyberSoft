@@ -27,27 +27,48 @@
     align-items: center;
     justify-content: center;
     padding: 0.6rem;    
-    animation: Scale 1s linear infinite;
+    /* animation: Scale 1s linear infinite; */
 }
 
 .toolbar__content a {
     text-decoration: none;
 }
 
-.toolbar__title {
-    background-color: #dd3333;
-}
 
 .toolbar__icon.call-icon {
     background-color: #dd3333;
+    position: relative;
 }
 
 .toolbar__icon.mess-icon {
     background-color: #0772e6;
+    position: relative;
 }
 
 .toolbar__icon.zalo-icon {
     background-color: #1e73be;
+    position: relative;
+}
+
+.zalo-icon .toolbar__title {
+    background-color: #1e73be;
+}
+
+.mess-icon .toolbar__title {
+    background-color: #0772e6;
+}
+
+.toolbar__title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 120%;
+    background-color: #dd3333;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+    z-index: 1;
 }
 
 .toolbar__img {
@@ -147,7 +168,7 @@
 }
 
 .header__cart--no-cart {
-    display: block;
+    display: none;
     position: absolute;
     top: calc(100% + 2rem);
     right: 0;
@@ -162,11 +183,16 @@
     transform-origin: calc(100% - 3rem) 0;
 }
 
-
-.header__cart--no-cart::before,
-.arrow-css::before {
-    --left: 80%;
-    z-index: -1;
+.header__cart--no-cart::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 4rem;
+    transform: rotate(45deg);
+    background-color: var(--bg-color);
 }
 
 .header__cart--no-cart::after {

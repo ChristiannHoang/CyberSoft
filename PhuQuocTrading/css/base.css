@@ -118,24 +118,3 @@ html {
         transform: scale(var(--scale-to));
     }
 }
-
-/* ARROW CSS */
-:root {
-    --top: 0;
-    --left: 0;
-    --width: 4rem;
-    --height: 4rem;
-    --bg-color: #fff;
-}
-
-.arrow-css::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: var(--top);
-    left: var(--left);
-    width: var(--width);
-    height: var(--height);
-    transform: rotate(45deg);
-    background-color: var(--bg-color);
-}
