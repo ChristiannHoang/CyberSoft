@@ -16,6 +16,11 @@
     margin-right: -16px;
 }
 
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .col {
     padding-left: 16px;
     padding-right: 16px;
@@ -24,6 +29,11 @@
 .l-0, .l-1, .l-2, .l-3, .l-4, .l-5, .l-6,
 .l-7, .l-8, .l-9, .l-10, .l-11, .l-12 {
     display: block;
+}
+
+.row.no-guuter .col {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .l-0 {
@@ -85,17 +95,41 @@
     max-width: calc(11/12*100%);
 }
 
-.l-12 {
-    flex: 0 0 calc(12/12*100%);
-    max-width: calc(12/12*100%);
-}
+/* ----------------------------------------- */
 
-.l-o-1 {
+.l-0-1 {
     margin-left: calc(1/12*100%);
 }
-
-
-
+.l-0-2 {
+    margin-left: calc(2/12*100%);
+}
+.l-0-3 {
+    margin-left: calc(3/12*100%);
+}
+.l-0-4 {
+    margin-left: calc(4/12*100%);
+}
+.l-0-5 {
+    margin-left: calc(5/12*100%);
+}
+.l-0-6 {
+    margin-left: calc(6/12*100%);
+}
+.l-0-7 {
+    margin-left: calc(7/12*100%);
+}
+.l-0-8 {
+    margin-left: calc(8/12*100%);
+}
+.l-0-9 {
+    margin-left: calc(9/12*100%);
+}
+.l-0-10 {
+    margin-left: calc(10/12*100%);
+}
+.l-0-11 {
+    margin-left: calc(11/12*100%);
+}
 
 
 
