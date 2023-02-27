@@ -1,3 +1,13 @@
+:root {
+    --header__topbar__height: 40px;
+    --header__search__height: 88px;
+    --header__nav__height: 60px;
+    --header__height: calc(var( --header__topbar__height) + var(--header__search__height) + var(--header__nav__height));
+
+    --black-color: #000;
+    --white-color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;

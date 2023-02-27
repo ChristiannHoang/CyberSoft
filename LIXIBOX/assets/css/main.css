@@ -1,0 +1,119 @@
+/* HEADER CSS */
+.header {
+    height: var(--header__height);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+/* ------------ */
+.header__topbar {
+    height: var(--header__topbar__height);
+    background-color: #202020;
+}
+
+.header__topbar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__topbar__cta-link,
+.tracking-item__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--white-color);
+    line-height: var(--header__topbar__height);
+}
+
+.header__topbar__tracking {
+    display: flex;
+    align-items: center;
+}
+
+.tracking-item {
+    margin-left: 1.6rem;
+}
+
+.tracking-item i {
+    margin-right: 2px;
+}
+/* ------------------------------ */
+.header__search {
+    height: var(--header__search__height);
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    width: 190px;
+}
+
+.header__logo-link {
+    display: block;
+    width: 140px;
+}
+
+.header__search__box {
+    flex-grow: 1;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    height: 48px;
+    flex-grow: 1;
+    font-size: 1.3rem;
+    padding: 0 28px;
+    border: none;
+    outline: none;
+    background-color: unset;
+}
+
+.header__search-input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.header__search-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    padding: 0 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    height: 100%;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.header__search-btn-svg {
+    width: 20px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.header__search__account {
+    width: 200px;
+    text-align: right;
+}
+
+.header__search__cart {
+    width: 75px;
+    text-align: right;
+}
+
+.header__search__account-link,
+.header__search__cart-link {
+    text-decoration: none;
+    color: unset;
+}
+
+.header__search__account-link {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.header__search__cart i {
+    font-size: 25px;
+}
+/* END HEADER CSS */
