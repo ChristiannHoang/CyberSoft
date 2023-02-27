@@ -94,6 +94,20 @@
     margin-left: calc(1/12*100%);
 }
 
+.l-o-2 {
+    margin-left: calc(2/12*100%);
+}
+
+.l-o-11 {
+    margin-left: calc(11/12*100%);
+}
+
+.l-o-12 {
+    margin-left: calc(12/12*100%);
+}
+
+
+
 
 
 
