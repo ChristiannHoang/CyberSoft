@@ -1,3 +1,20 @@
+/* MODAL CSS  */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
 /* HEADER CSS */
 .header {
     height: var(--header__height);
@@ -115,5 +132,37 @@
 
 .header__search__cart i {
     font-size: 25px;
+}
+
+.header__nav {
+    height: var(--header__nav__height);
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar__item__link {
+    text-decoration: none;
+    color: rgb(0, 2, 4);
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__youtube-icon {
+    color: #FE8BAF;
+    font-size: 2.4rem;
+    margin-right: 4px;
+}
+
+.navbar__item__link:hover {
+    color: #FE8BAF;
 }
 /* END HEADER CSS */
