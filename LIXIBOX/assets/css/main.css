@@ -172,7 +172,8 @@
 .slider {
     margin: 0 auto;
     height: var(--slider__height);
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     background: url('../img/slider.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,6 +202,7 @@
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .slider__arrow--left {
@@ -227,8 +229,8 @@
 
 .slider__circle-item {
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     background-color: #000;
     margin-right: 8px;
     border-radius: 50%;
@@ -239,3 +241,9 @@
     border: 1px solid var(--black-color);
 }
 /* END SLIDER CSS  */
+
+/* HOT DEAL CSS */
+.product-slide {
+    padding: 50px 0;
+}
+/* END HOT DEAL CSS  */
