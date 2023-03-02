@@ -41,13 +41,18 @@
 }
 
 .l-1 {
-    flex: 0 0 calc(1/12*100%);
-    max-width: calc(1/12*100%);
+    flex: 0 0 calc(100%/12*1);
+    max-width: calc(100%/12*1);
 }
 
 .l-2 {
-    flex: 0 0 calc(2/12*100%);
-    max-width: calc(2/12*100%);
+    flex: 0 0 calc(100%/12*2);
+    max-width: calc(100%/12*2);
+}
+
+.l-2-4 {
+    flex: 0 0 calc(100%/12*2.4);
+    max-width: calc(100%/12*2.4);
 }
 
 .l-2-4 {
@@ -56,94 +61,98 @@
 }
 
 .l-3 {
-    flex: 0 0 calc(3/12*100%);
-    max-width: calc(3/12*100%);
+    flex: 0 0 calc(100%/12*3);
+    max-width: calc(100%/12*3);
 }
 
 .l-4 {
-    flex: 0 0 calc(4/12*100%);
-    max-width: calc(4/12*100%);
+    flex: 0 0 calc(100%/12*4);
+    max-width: calc(100%/12*4);
 }
 
 .l-5 {
-    flex: 0 0 calc(5/12*100%);
-    max-width: calc(5/12*100%);
+    flex: 0 0 calc(100%/12*5);
+    max-width: calc(100%/12*5);
 }
 
 .l-6 {
-    flex: 0 0 calc(6/12*100%);
-    max-width: calc(6/12*100%);
+    flex: 0 0 calc(100%/12*6);
+    max-width: calc(100%/12*6);
 }
 
 .l-7 {
-    flex: 0 0 calc(7/12*100%);
-    max-width: calc(7/12*100%);
+    flex: 0 0 calc(100%/12*7);
+    max-width: calc(100%/12*7);
 }
 
 .l-8 {
-    flex: 0 0 calc(8/12*100%);
-    max-width: calc(8/12*100%);
+    flex: 0 0 calc(100%/12*8);
+    max-width: calc(100%/12*8);
 }
 
 .l-9 {
-    flex: 0 0 calc(9/12*100%);
-    max-width: calc(9/12*100%);
+    flex: 0 0 calc(100%/12*9);
+    max-width: calc(100%/12*9);
 }
 
 .l-10 {
-    flex: 0 0 calc(10/12*100%);
-    max-width: calc(10/12*100%);
+    flex: 0 0 calc(100%/12*10);
+    max-width: calc(100%/12*10);
 }
 
 .l-11 {
-    flex: 0 0 calc(11/12*100%);
-    max-width: calc(11/12*100%);
+    flex: 0 0 calc(100%/12*11);
+    max-width: calc(100%/12*11);
 }
 
 /* ----------------------------------------- */
 
 .l-0-1 {
-    margin-left: calc(1/12*100%);
+    margin-left: calc(100%/12*1);
 }
 
 .l-o-2 {
-    margin-left: calc(2/12*100%);
+    margin-left: calc(100%/12*2);
+}
+
+.l-o-2-4 {
+    margin-left: calc(100%/12*2.4);
 }
 
 .l-0-3 {
-    margin-left: calc(3/12*100%);
+    margin-left: calc(100%/12*3);
 }
 
 .l-0-4 {
-    margin-left: calc(4/12*100%);
+    margin-left: calc(100%/12*4);
 }
 
 .l-0-5 {
-    margin-left: calc(5/12*100%);
+    margin-left: calc(100%/12*5);
 }
 
 .l-0-6 {
-    margin-left: calc(6/12*100%);
+    margin-left: calc(100%/12*6);
 }
 
 .l-0-7 {
-    margin-left: calc(7/12*100%);
+    margin-left: calc(100%/12*7);
 }
 
 .l-0-8 {
-    margin-left: calc(8/12*100%);
+    margin-left: calc(100%/12*8);
 }
 
 .l-0-9 {
-    margin-left: calc(9/12*100%);
+    margin-left: calc(100%/12*9);
 }
 
 .l-0-10 {
-    margin-left: calc(10/12*100%);
+    margin-left: calc(100%/12*10);
 }
 
 .l-0-11 {
-    margin-left: calc(11/12*100%);
+    margin-left: calc(100%/12*11);
 }
 
 

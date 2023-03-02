@@ -172,8 +172,13 @@
 .slider {
     margin: 0 auto;
     height: var(--slider__height);
+<<<<<<< HEAD
     width: 100%;
     max-width: 1440px;
+=======
+    max-width: 1440px;
+    width: 100%;
+>>>>>>> 70ac181d9e912cbefa1b56a39fb85c4a833b7256
     background: url('../img/slider.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,8 +247,41 @@
 }
 /* END SLIDER CSS  */
 
+<<<<<<< HEAD
 /* HOT DEAL CSS */
 .product-slide {
     padding: 50px 0;
+=======
+/* HOT DEAL CSS  */
+.product-slide {
+    padding: 30px 0;
+}
+
+.product-slide__name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #202020;
+    padding: 20px 0 30px;
+}
+
+.product__item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product__img {
+    width: 100%;
+}
+
+.product__item-company {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3e4048;
+    height: 20px;
+    -webkit-line-clamp: 1;
+    width: 100%;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+>>>>>>> 70ac181d9e912cbefa1b56a39fb85c4a833b7256
 }
 /* END HOT DEAL CSS  */
