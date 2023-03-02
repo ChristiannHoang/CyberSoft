@@ -172,13 +172,8 @@
 .slider {
     margin: 0 auto;
     height: var(--slider__height);
-<<<<<<< HEAD
-    width: 100%;
-    max-width: 1440px;
-=======
     max-width: 1440px;
     width: 100%;
->>>>>>> 70ac181d9e912cbefa1b56a39fb85c4a833b7256
     background: url('../img/slider.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,11 +242,6 @@
 }
 /* END SLIDER CSS  */
 
-<<<<<<< HEAD
-/* HOT DEAL CSS */
-.product-slide {
-    padding: 50px 0;
-=======
 /* HOT DEAL CSS  */
 .product-slide {
     padding: 30px 0;
@@ -267,21 +257,55 @@
 .product__item-link {
     text-decoration: none;
     color: inherit;
+    line-height: 2rem;
 }
 
 .product__img {
     width: 100%;
 }
 
+.product__item-content {
+    margin-top: 8px;
+}
+
 .product__item-company {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #3e4048;
-    height: 20px;
+    color: #222327;
     -webkit-line-clamp: 1;
     width: 100%;
     display: -webkit-box;
     text-overflow: ellipsis;
->>>>>>> 70ac181d9e912cbefa1b56a39fb85c4a833b7256
+}
+
+.product__item-name {
+    font-size: 1.3rem;
+    color: #3e4048;
+}
+
+.product__item-star-icon {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+}
+
+.product__item-rating-number {
+    font-size: 1.2rem;
+    color: #8a8d90;
+}
+
+.product__item-price {
+    font-size: 1.6rem;
+    color: #3e4048;
+    font-weight: 600;
+}
+
+.product__item-price-vnd {
+    text-decoration:underline;
+}
+
+.product__item-price-cmt {
+    font-size: 1.2rem;
+    color: #8a8d90;
+    font-weight: 400;
 }
 /* END HOT DEAL CSS  */

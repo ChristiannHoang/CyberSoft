@@ -55,11 +55,6 @@
     max-width: calc(100%/12*2.4);
 }
 
-.l-2-4 {
-    flex: 0 0 calc(5/12*100%);
-    min-width: calc(5/12*100%);
-}
-
 .l-3 {
     flex: 0 0 calc(100%/12*3);
     max-width: calc(100%/12*3);
