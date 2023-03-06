@@ -171,7 +171,7 @@
 /* SLIDER CSS */
 .slider {
     margin: 0 auto;
-    height: var(--slider__height);
+    padding-top: 50%;
     max-width: 1440px;
     width: 100%;
     background: url('../img/slider.jpg');
@@ -254,6 +254,10 @@
     padding: 20px 0 30px;
 }
 
+.product-slide__slider {
+    position: relative;
+}
+
 .product__item-link {
     text-decoration: none;
     color: inherit;
@@ -307,5 +311,57 @@
     font-size: 1.2rem;
     color: #8a8d90;
     font-weight: 400;
+}
+
+.product__arrow {
+    width: 40px;
+    height: 60px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 3.5rem;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s linear;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.product__arrow--left {
+    left: 0px;
+}
+
+.product__arrow--right {
+    right: 0px;
+}
+
+.product__circle {
+    position: absolute;
+    transform: translateX(-50%);
+    top: 100%;
+    left: 50%;
+    transition: all .3s linear;
+    opacity: 0;
+}
+
+.slider:hover .slider__circle {
+    transform: translateX(-50%) translateY(-200%);
+    opacity: 1;
+}
+
+.slider__circle-item {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: #000;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.slider__circle-item--active {
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
 }
 /* END HOT DEAL CSS  */
